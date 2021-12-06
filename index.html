@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cover-Receipt</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Brandi Cameron | hello@brandicameron.com" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+  <meta property="og:title" content="CHI Inspection Files" />
+  <meta property="og:image" content="/img/cameron-home-inspection-nashville.jpg" />
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+</head>
+
+<body>
+  <form id="form">
+    <div class="block">
+      <label>
+        <span>Date of Inspection:</span>
+        <input id="inspection-date" type="date">
+      </label>
+      <label>
+        <span>Date of Receipt:</span>
+        <input id="receipt-date" type="date">
+      </label>
+      <label>
+        <span>Inspection Fee:</span>
+        <input id="inspection-fee" type="text">
+      </label>
+    </div>
+    <label>
+      <span>Property Address:</span>
+      <input id="property-address" type="text">
+    </label>
+    <div class="block">
+      <label>
+        <span>City:</span>
+        <input id="property-city" type="text">
+      </label>
+      <label>
+        <span>Zip:</span>
+        <input id="property-zip" type="text">
+      </label>
+    </div>
+    <div class="block">
+      <label>
+        <span>Client Name:</span>
+        <input id="client-name" type="text">
+      </label>
+      <label>
+        <span>Client Email:</span>
+        <input id="client-email" type="email">
+      </label>
+    </div>
+    <button type="submit" id="submit" class="submit-btn">Submit</button>
+  </form>
+
+
+  <section class="cover">
+    <div class="logo">
+      <h1>Cameron <span class="logo-text">Home Inspection</span></h1>
+    </div>
+    <div class="img-dropzone">
+      <label class="dropzone">
+        <span class="dropzone-text"></span>
+        <input id="image-input" type="file" accept="image/png, image/jpeg">
+      </label>
+      <img class="cover-image home-image" src="./img/house.jpg" alt="Inspected home.">
+    </div>
+    <div class="address">
+      <div class="cover-street street"></div>
+      <div><span class="city"></span><span class="zip"></span> </div>
+    </div>
+    <div class="border"></div>
+  </section>
+
+  <section class="receipt">
+    <div class="logo">
+      <h1>Cameron <span class="logo-text">Home Inspection</span></h1>
+    </div>
+    <div class="receipt-date">
+      <span class="receipt-text">RECEIPT</span>
+      <span class="divider"></span>
+      <span class="date"></span>
+    </div>
+    <div class="receipt-content">
+      <img class="content-image home-image" src="./img/house.jpg" alt="Inspected home.">
+      <div class="content-info">
+        <div>
+          <h2 class="content-title">Property Inspected</h2>
+          <div class="street"></div>
+          <div><span class="city"></span><span class="zip"></span>
+          </div>
+        </div>
+        <div>
+          <h2 class="content-title">Inspected for</h2>
+          <div class="client-name"></div>
+          <div class="client-email"></div>
+        </div>
+        <div>
+          <h2 class="content-title">Inspected on</h2>
+          <div class="inspection-date"></div>
+        </div>
+        <div>
+          <h2 class="content-title">Inspection fee</h2>
+          <div class="inspection-fee"></div>
+        </div>
+      </div>
+    </div>
+    <div class="border"></div>
+    <footer>
+      <div class="website">www.cameronhomeinspection.com</div>
+      <div class="contact">
+        <span class="phone">615-516-7066</span>
+        <span class="bullet">•</span>
+        <span class="email">eric@cameronhomeinspection.com</span>
+      </div>
+    </footer>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
