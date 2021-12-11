@@ -41,7 +41,7 @@ function handleSubmit(e) {
   });
 
   city.forEach((el) => {
-    el.textContent = `${propertyCityInput.value}, Tennessee`;
+    el.textContent = `${propertyCityInput.value}, Tennessee `;
   });
 
   zip.forEach((el) => {
