@@ -149,9 +149,10 @@ h1 {
 }
 
 .divider {
+  display: inline-block;
   height: 25px;
   width: 1px;
-  background-color: $accent-color;
+  border-right: 1px solid $accent-color;
   opacity: 0.7;
 }
 

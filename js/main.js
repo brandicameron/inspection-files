@@ -48,7 +48,7 @@ function handleSubmit(e) {
     el.textContent = propertyZipInput.value;
   });
 
-  // adding a time value prevents at UTC date, which displays the day before
+  // adding a time value prevents a UTC date, which displays the day before
   let formattedReceiptDate = new Date(`${receiptDateInput.value}T00:00`);
   let formattedInspectionDate = new Date(`${inspectionDateInput.value}T00:00`);
 
@@ -61,14 +61,14 @@ function handleSubmit(e) {
   clientName.textContent = clientNameInput.value;
   clientEmail.textContent = clientEmailInput.value;
   inspectionDate.textContent = formattedInspectionDate.toLocaleDateString();
-  inspectionFee.textContent = `$${inspectionFeeInput.value}`;
+  inspectionFee.textContent = `$${inspectionFeeInput.value}.00`;
 
-  formElement.reset();
-  formElement.className = "go-away";
+  // formElement.reset();
+  // formElement.className = "go-away";
 
-  setTimeout(() => {
-    formElement.style.display = "none";
-  }, 350);
+  // setTimeout(() => {
+  //   formElement.style.display = "none";
+  // }, 350);
 }
 
 document.getElementById("submit").addEventListener("click", handleSubmit);
